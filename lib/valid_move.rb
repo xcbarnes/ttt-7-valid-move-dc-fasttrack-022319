@@ -1,7 +1,7 @@
 # code your #valid_move? method here
 def valid_move(index)
   if 
-    index === (0..8) && !position_taken?(index)
+    !position_taken?(index) && index === (0..8)
     TRUE
   else 
     FALSE
